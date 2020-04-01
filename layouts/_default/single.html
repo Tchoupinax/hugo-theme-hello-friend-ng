@@ -15,7 +15,7 @@
   <article>
     <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h2>
     <div style="text-align: right; font-style: italic; color:gray">
-      Last updated : {{ .Page.Lastmod.Format "2 January 2006" }}
+      Last modification: {{ .Page.Lastmod.Format "January 2, 2006" }}
     </div>
 
     {{- if .Params.toc }}
@@ -35,8 +35,6 @@
       {{ .Content }}
     </div>
   </article>
-
-  <hr />
 
   <div class="post-info">
     {{- with .Params.tags }}
