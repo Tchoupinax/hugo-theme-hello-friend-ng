@@ -27,6 +27,19 @@
     }
   }
 
+  &-tags {
+    display: flex;
+
+    li {
+      margin-right: 1rem;
+      background-color: #eaeaea;
+      padding: .2rem .4rem;
+      border-radius: 10px;
+      list-style: none;
+      font-size: .8rem;
+    }
+  }
+
   &-title {
     margin-bottom: 50px;
   }

@@ -1,9 +1,15 @@
 {{ define "main" }}
 <main class="posts">
+  <ul class="posts-tags">
+    {{ range $key, $value := .Site.Taxonomies.tags }}
+      <a href="/tags/{{ $key | urlize  }}"><li>{{ $key | humanize }} ({{ len $value }})</li></a>
+    {{ end }}
+  </ul>
+
   <h1 class="posts-title">{{ .Title }}</h1>
 
   {{- if .Content }}
-  <div class="content">{{ .Content }}</div>
+    <div class="content">{{ .Content }}</div>
   {{- end }}
 
   {{- range .Data.Pages.GroupByDate "2006" }}
