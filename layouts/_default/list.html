@@ -1,6 +1,6 @@
 {{ define "main" }}
 <main class="posts">
-  <ul class="posts-tags">
+  <ul class="posts-tags-abcde">
     {{ range $key, $value := .Site.Taxonomies.tags }}
       <a href="/tags/{{ $key | urlize  }}"><li>{{ $key | humanize }} ({{ len $value }})</li></a>
     {{ end }}
