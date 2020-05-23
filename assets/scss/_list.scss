@@ -29,6 +29,7 @@
 
   &-tags-abcde {
     display: flex;
+    flex-wrap: wrap;
 
     li {
       margin-right: 1rem;
@@ -37,6 +38,7 @@
       border-radius: 10px;
       list-style: none;
       font-size: .8rem;
+      margin-bottom: 8px;
     }
   }
 
