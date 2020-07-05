@@ -61,3 +61,15 @@
 {{- if templates.Exists "partials/extra-head.html" -}}
     {{ partial "extra-head.html" . }}
 {{- end }}
+
+<script src="{{ .Site.Params.ackeeServer }}/tracker.js"></script>
+<script>
+	ackeeTracker.create({
+	   server: '{{ .Site.Params.ackeeServer }}',
+       domainId: '{{ .Site.Params.ackeeDomainId }}',
+  }, 
+  {
+    ignoreLocalhost: '{{ .Site.Params.ackeeIgnoreLocalhost }}' === 'true',
+    detailed: '{{ .Site.Params.ackeeDetailed }}' === 'true',
+  }).record()
+</script>
