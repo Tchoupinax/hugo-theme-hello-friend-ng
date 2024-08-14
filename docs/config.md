@@ -1,6 +1,6 @@
 # Configuration
 
-There are some settings you can set in your `config.toml`. 
+There are some settings you can set in your `config.toml`.
 
 ## Default area
 

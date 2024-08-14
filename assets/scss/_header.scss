@@ -15,11 +15,11 @@
     background: $light-background-header;
   }
 
-  [data-theme=dark] & {
+  [data-theme="dark"] & {
     background: $dark-background-header;
   }
 
-  [data-theme=light] & {
+  [data-theme="light"] & {
     background: $light-background-header;
   }
 
@@ -57,7 +57,7 @@
 
 .not-selectable {
   user-select: none;
-  -webkit-user-select: none;  
-  -moz-user-select: none;    
-  -ms-user-select: none;      
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }

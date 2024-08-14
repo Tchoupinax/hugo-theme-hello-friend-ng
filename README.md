@@ -49,13 +49,13 @@ You can download the theme manually by going to [https://github.com/rhazdon/hugo
 
 You can also clone it directly to your Hugo folder:
 
-``` bash
+```bash
 $ git clone https://github.com/rhazdon/hugo-theme-hello-friend-ng.git themes/hello-friend-ng
 ```
 
 If you don't want to make any radical changes, it's the best option, because you can get new updates when they are available. To do so, include it as a git submodule:
 
-``` bash
+```bash
 $ git submodule add https://github.com/rhazdon/hugo-theme-hello-friend-ng.git themes/hello-friend-ng
 ```
 
@@ -65,7 +65,7 @@ The theme doesn't require any advanced configuration. Just copy the following co
 To see all possible configurations, [check the docs](docs/config.md).
 Note: There are more options to configure. Take a look into the `config.toml` in `exampleSite`.
 
-``` toml
+```toml
 baseurl      = "localhost"
 title        = "My Blog"
 languageCode = "en-us"
@@ -86,7 +86,7 @@ paginate     = 10
 
   # Enable sharing buttons, if you like
   enableSharingButtons = true
-  
+
   # Show a global language switcher in the navigation bar
   enableGlobalLanguageMenu = true
 
@@ -135,14 +135,14 @@ Of course you are able to use all default shortcodes from hugo (https://gohugo.i
 
 Properties:
 
-  - `src` (required)
-  - `alt` (optional)
-  - `position` (optional, default: `left`, options: [`left`, `center`, `right`])
-  - `style`
+- `src` (required)
+- `alt` (optional)
+- `position` (optional, default: `left`, options: [`left`, `center`, `right`])
+- `style`
 
 Example:
 
-``` golang
+```golang
 {{< image src="/img/hello.png" alt="Hello Friend" position="center" style="border-radius: 8px;" >}}
 ```
 
@@ -180,7 +180,7 @@ A large variety of social icons are available and can be configured like this:
   url = "<profile_URL>"
 ```
 
-Take a look into this [list](docs/svgs.md) of available icon options. 
+Take a look into this [list](docs/svgs.md) of available icon options.
 
 If you need another one, just open an issue or create a pull request with your wished icon. :)
 
@@ -191,7 +191,7 @@ Related issue tickets: [!14](https://github.com/rhazdon/hugo-theme-hello-friend-
 
 Either you comment it out completely or you write the following in
 
-``` toml
+```toml
 [taxonomies]
   tag      = "tags"
   category = "categories"
